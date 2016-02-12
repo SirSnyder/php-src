@@ -7195,7 +7195,7 @@ void zend_compile_const_expr_const(zend_ast **ast_ptr) /* {{{ */
 	if (!is_fully_qualified) {
 		Z_CONST_FLAGS(resolved_name) = IS_CONSTANT_UNQUALIFIED;
                 
-                printf("******************* zend_compile_const_expr_const not is_fully_qualifier resolved_name: %s \n", ZSTR_VAL(resolved_name));
+                printf("******************* zend_compile_const_expr_const not is_fully_qualifier resolved_name: \n");
 	}
 
 	zend_ast_destroy(ast);
