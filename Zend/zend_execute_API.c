@@ -593,6 +593,8 @@ ZEND_API int zval_update_constant_ex(zval *p, zend_bool inline_change, zend_clas
 						zend_string *s = zend_string_init(actual, actual_len, 0);
 						Z_STR_P(p) = s;
 						Z_TYPE_FLAGS_P(p) = IS_TYPE_REFCOUNTED | IS_TYPE_COPYABLE;
+                                                
+                                                printf("<<<<<<<<<<<<<<<<<<<< ----------------------------- zval_update_constant_ex set IS_TYPE_REFCOUNTED actual: %s \n", actual);
 					}
 				}
 				if (actual[0] == '\\') {
